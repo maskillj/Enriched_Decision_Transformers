@@ -1,3 +1,4 @@
+#This should be placed in lib/python3.10/site-packages/gym/envs/mujoco/ of your development environment.
 import numpy as np
 from gym import utils
 from gym.envs.mujoco import mujoco_env
