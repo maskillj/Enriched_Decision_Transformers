@@ -1,3 +1,4 @@
+#This should be placed in lib/python3.10/site-packages/gym/envs/mujoco/ of your development environment.
 from collections import OrderedDict
 import os
 from typing import Optional
