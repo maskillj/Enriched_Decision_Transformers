@@ -7,7 +7,7 @@ from torch.utils.data import Dataset, IterableDataset
 from drawdown_control.decision_transformer import *
 from drawdown_control.decision_transformer_policy import * 
 from common.get_termination_fn import get_termination_fn
-from common.buffer import Buffer
+#from common.buffer import Buffer
 from common.discounted_cum_sum import discounted_cum_sum
 
 def prepare_inputs(dataset, max_len, state_dim, act_dim):
@@ -149,12 +149,12 @@ def qlearning_dataset(env, dataset=None, terminate_on_end=False, discard_last=Tr
         "ends": np.array(end_)
     }
     q_dataset['drawdowns'] = [0] * len(q_dataset['rewards'])
+    current_drawdown = [0] * len(q_dataset['rewards'])
+    q_dataset['drawdowns'][0] = q_dataset['rewards'][0]
+    current_drawdown[0] = q_dataset['rewards'][0]
     for i in range(1, len(q_dataset['rewards'])):
-        if q_dataset['ends'][i-1]:
-            q_dataset['drawdowns'][i] = q_dataset['rewards'][i]
-        else:
-            q_dataset['drawdowns'][i] = q_dataset['drawdowns'][i-1] + q_dataset['rewards'][i]
-            q_dataset['drawdowns'][0] = q_dataset['rewards'][0]
+        current_drawdown[i] = current_drawdown[i-1]+q_dataset['rewards'][i]
+        q_dataset['drawdowns'][i] = min (current_drawdown[i-1],current_drawdown[i-1] + current_drawdown[i])
     q_dataset['drawdowns'] = np.array(q_dataset['drawdowns'])
     return q_dataset
     
