@@ -1,0 +1,49 @@
+{
+    "os": "macOS-14.4-arm64-arm-64bit",
+    "python": "3.10.14",
+    "heartbeatAt": "2024-09-15T21:33:22.153562",
+    "startedAt": "2024-09-15T21:33:21.239353",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/jamesmaskill/Documents/GitHub/Enriched_Decision_Transformers/scripts/test_drawdown.py",
+    "codePathLocal": "scripts/test_drawdown.py",
+    "codePath": "scripts/test_drawdown.py",
+    "git": {
+        "remote": "https://github.com/maskillj/Enriched_Decision_Transformers.git",
+        "commit": "348f521b69c58b1623358697aff0645cbbbe9d69"
+    },
+    "email": "maskillj@gmail.com",
+    "root": "/Users/jamesmaskill/Documents/GitHub/Enriched_Decision_Transformers",
+    "host": "Jamess-MacBook-Pro.local",
+    "username": "jamesmaskill",
+    "executable": "/Users/jamesmaskill/miniforge3/envs/py10env/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 3504,
+        "min": 600,
+        "max": 3504
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3504,
+            "min": 600,
+            "max": 3504
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 228.27386474609375,
+            "used": 9.540775299072266
+        }
+    },
+    "gpuapple": {
+        "type": "Apple M2",
+        "vendor": "sppci_vendor_Apple"
+    },
+    "memory": {
+        "total": 8.0
+    }
+}

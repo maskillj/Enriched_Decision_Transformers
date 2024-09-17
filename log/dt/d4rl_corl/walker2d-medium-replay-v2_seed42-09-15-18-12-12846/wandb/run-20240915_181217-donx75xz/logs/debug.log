@@ -1,0 +1,29 @@
+2024-09-15 18:12:17,193 INFO    MainThread:12846 [wandb_setup.py:_flush():76] Current SDK version is 0.17.5
+2024-09-15 18:12:17,193 INFO    MainThread:12846 [wandb_setup.py:_flush():76] Configure stats pid to 12846
+2024-09-15 18:12:17,193 INFO    MainThread:12846 [wandb_setup.py:_flush():76] Loading settings from /Users/jamesmaskill/.config/wandb/settings
+2024-09-15 18:12:17,193 INFO    MainThread:12846 [wandb_setup.py:_flush():76] Loading settings from /Users/jamesmaskill/Documents/GitHub/Enriched_Decision_Transformers/wandb/settings
+2024-09-15 18:12:17,193 INFO    MainThread:12846 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-09-15 18:12:17,193 INFO    MainThread:12846 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-09-15 18:12:17,193 INFO    MainThread:12846 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'scripts/test_drawdown.py', 'program_abspath': '/Users/jamesmaskill/Documents/GitHub/Enriched_Decision_Transformers/scripts/test_drawdown.py', 'program': '/Users/jamesmaskill/Documents/GitHub/Enriched_Decision_Transformers/scripts/test_drawdown.py'}
+2024-09-15 18:12:17,193 INFO    MainThread:12846 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-09-15 18:12:17,193 INFO    MainThread:12846 [wandb_init.py:_log_setup():529] Logging user logs to ./log/dt/d4rl_corl/walker2d-medium-replay-v2_seed42-09-15-18-12-12846/wandb/run-20240915_181217-donx75xz/logs/debug.log
+2024-09-15 18:12:17,194 INFO    MainThread:12846 [wandb_init.py:_log_setup():530] Logging internal logs to ./log/dt/d4rl_corl/walker2d-medium-replay-v2_seed42-09-15-18-12-12846/wandb/run-20240915_181217-donx75xz/logs/debug-internal.log
+2024-09-15 18:12:17,194 INFO    MainThread:12846 [wandb_init.py:init():569] calling init triggers
+2024-09-15 18:12:17,194 INFO    MainThread:12846 [wandb_init.py:init():576] wandb.init called with sweep_config: {}
+config: {'NameSpace': {}, 'attention_dropout': 0.1, 'batch_size': 64, 'betas': [0.9, 0.999], 'clip_grad': 0.25, 'debug': False, 'embed_dim': 128, 'embed_dropout': 0.1, 'episode_len': 1000, 'eval_episode': 10, 'eval_interval': 10, 'log_interval': 10, 'lr': 0.0008, 'max_drawdown': [], 'max_epoch': 10000, 'name': 'd4rl_corl', 'normalize_obs': True, 'normalize_reward': False, 'num_heads': 1, 'num_layers': 5, 'num_workers': 4, 'policy_type': 'deterministic', 'pos_encoding': 'embed', 'residual_dropout': 0.1, 'return_scale': 0.001, 'save_interval': 50, 'seed': 42, 'seq_len': 64, 'step_per_epoch': 100, 'target_returns': [300], 'task': 'walker2d-medium-replay-v2', 'total_timesteps': [], 'use_abs_timestep': True, 'wandb': {'entity': None, 'project': None}, 'warmup_steps': 1, 'weight_decay': 0.0001}
+2024-09-15 18:12:17,194 INFO    MainThread:12846 [wandb_init.py:init():619] starting backend
+2024-09-15 18:12:17,194 INFO    MainThread:12846 [wandb_init.py:init():623] setting up manager
+2024-09-15 18:12:17,195 INFO    MainThread:12846 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2024-09-15 18:12:17,197 INFO    MainThread:12846 [wandb_init.py:init():631] backend started and connected
+2024-09-15 18:12:17,200 INFO    MainThread:12846 [wandb_init.py:init():720] updated telemetry
+2024-09-15 18:12:17,217 INFO    MainThread:12846 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-09-15 18:12:17,484 INFO    MainThread:12846 [wandb_run.py:_on_init():2435] communicating current version
+2024-09-15 18:12:17,628 INFO    MainThread:12846 [wandb_run.py:_on_init():2444] got version response upgrade_message: "wandb version 0.18.0 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-09-15 18:12:17,628 INFO    MainThread:12846 [wandb_init.py:init():804] starting run threads in backend
+2024-09-15 18:12:26,044 INFO    MainThread:12846 [wandb_run.py:_console_start():2413] atexit reg
+2024-09-15 18:12:26,044 INFO    MainThread:12846 [wandb_run.py:_redirect():2255] redirect: wrap_raw
+2024-09-15 18:12:26,044 INFO    MainThread:12846 [wandb_run.py:_redirect():2320] Wrapping output streams.
+2024-09-15 18:12:26,045 INFO    MainThread:12846 [wandb_run.py:_redirect():2345] Redirects installed.
+2024-09-15 18:12:26,046 INFO    MainThread:12846 [wandb_init.py:init():847] run started, returning control to user process
+2024-09-15 19:24:36,383 WARNING MsgRouterThr:12846 [router.py:message_loop():77] message_loop has been closed

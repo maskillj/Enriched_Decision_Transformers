@@ -1,0 +1,88 @@
+/Users/jamesmaskill/miniforge3/envs/py10env/lib/python3.10/site-packages/gym/spaces/box.py:84: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+
+load datafile: 100%|█████████████████████████████████████████████████████████████████████████████████████████████| 11/11 [00:01<00:00,  6.29it/s]
+[1m[2024-09-16 13:09:46][22m	Episode 2:
+{'reward': np.float64(273.8883319357583), 'max_drawdown': np.float64(0.0)}
+[1m[2024-09-16 13:15:45][22m	Episode 4:
+{'reward': np.float64(268.009673842462), 'max_drawdown': np.float64(0.0)}
+[1m[2024-09-16 13:21:27][22m	Episode 6:
+{'reward': np.float64(274.6522828187998), 'max_drawdown': np.float64(0.0)}
+[1m[2024-09-16 13:27:12][22m	Episode 8:
+{'reward': np.float64(281.40143524815767), 'max_drawdown': np.float64(0.0)}
+[1m[2024-09-16 13:33:17][22m	Episode 10:
+{'reward': np.float64(272.410370406926), 'max_drawdown': np.float64(0.0)}
+[1m[2024-09-16 13:39:00][22m	Episode 12:
+{'reward': np.float64(279.977899143205), 'max_drawdown': np.float64(0.0)}
+[1m[2024-09-16 13:44:26][22m	Episode 14:
+{'reward': np.float64(335.2871421898335), 'max_drawdown': np.float64(0.0)}
+[1m[2024-09-16 13:49:59][22m	Episode 16:
+{'reward': np.float64(274.8435962789037), 'max_drawdown': np.float64(0.0)}
+[1m[2024-09-16 13:56:22][22m	Episode 18:
+{'reward': np.float64(273.33643132963834), 'max_drawdown': np.float64(0.0)}
+[1m[2024-09-16 14:02:37][22m	Episode 20:
+{'reward': np.float64(284.0868791036703), 'max_drawdown': np.float64(0.0)}
+[1m[2024-09-16 14:09:13][22m	Episode 22:
+{'reward': np.float64(278.7926466550843), 'max_drawdown': np.float64(0.0)}
+[1m[2024-09-16 14:15:02][22m	Episode 24:
+{'reward': np.float64(294.28495060555053), 'max_drawdown': np.float64(0.0)}
+[1m[2024-09-16 14:20:53][22m	Episode 26:
+{'reward': np.float64(289.0651867382868), 'max_drawdown': np.float64(0.0)}
+[1m[2024-09-16 14:26:54][22m	Episode 28:
+{'reward': np.float64(279.1840443025515), 'max_drawdown': np.float64(0.0)}
+[1m[2024-09-16 14:33:08][22m	Episode 30:
+{'reward': np.float64(272.74544168926116), 'max_drawdown': np.float64(0.0)}
+[1m[2024-09-16 14:39:45][22m	Episode 32:
+{'reward': np.float64(274.6044284129575), 'max_drawdown': np.float64(0.0)}
+[1m[2024-09-16 14:45:16][22m	Episode 34:
+{'reward': np.float64(278.6497707405289), 'max_drawdown': np.float64(0.0)}
+[1m[2024-09-16 14:50:42][22m	Episode 36:
+{'reward': np.float64(282.6275137679637), 'max_drawdown': np.float64(0.0)}
+[1m[2024-09-16 14:56:06][22m	Episode 38:
+{'reward': np.float64(296.5407887294744), 'max_drawdown': np.float64(0.0)}
+[1m[2024-09-16 15:01:34][22m	Episode 40:
+{'reward': np.float64(290.3626770148047), 'max_drawdown': np.float64(0.0)}
+[1m[2024-09-16 15:07:12][22m	Episode 42:
+{'reward': np.float64(272.71591506255083), 'max_drawdown': np.float64(0.0)}
+[1m[2024-09-16 15:13:03][22m	Episode 44:
+{'reward': np.float64(278.75991084654123), 'max_drawdown': np.float64(0.0)}
+[1m[2024-09-16 15:18:51][22m	Episode 46:
+{'reward': np.float64(281.96883873205553), 'max_drawdown': np.float64(0.0)}
+[1m[2024-09-16 15:24:43][22m	Episode 48:
+{'reward': np.float64(270.240850992676), 'max_drawdown': np.float64(0.0)}
+[1m[2024-09-16 15:30:37][22m	Episode 50:
+{'reward': np.float64(270.9606822716958), 'max_drawdown': np.float64(0.0)}
+[1m[2024-09-16 15:36:43][22m	Episode 52:
+{'reward': np.float64(277.4462328501429), 'max_drawdown': np.float64(0.0)}
+[1m[2024-09-16 15:42:27][22m	Episode 54:
+{'reward': np.float64(273.43456425360654), 'max_drawdown': np.float64(0.0)}
+[1m[2024-09-16 15:48:23][22m	Episode 56:
+{'reward': np.float64(274.60359285371874), 'max_drawdown': np.float64(0.0)}
+Traceback (most recent call last):
+  File "/Users/jamesmaskill/Documents/GitHub/Enriched_Decision_Transformers/scripts/test_drawdown.py", line 71, in <module>
+    train_metrics = policy.update(batch, clip_grad=args.clip_grad)
+  File "/Users/jamesmaskill/Desktop/Decision_Transformers/VS_Implementation/src/drawdown_control/decision_transformer_policy.py", line 77, in update
+    out = self.dt(
+  File "/Users/jamesmaskill/miniforge3/envs/py10env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/jamesmaskill/miniforge3/envs/py10env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/jamesmaskill/Desktop/Decision_Transformers/VS_Implementation/src/drawdown_control/decision_transformer.py", line 61, in forward
+    out = super().forward(
+  File "/Users/jamesmaskill/Desktop/Decision_Transformers/VS_Implementation/src/common/base_dt.py", line 149, in forward
+    inputs = block(inputs, attention_mask=mask, key_padding_mask=key_padding_mask)
+  File "/Users/jamesmaskill/miniforge3/envs/py10env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/jamesmaskill/miniforge3/envs/py10env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/jamesmaskill/Desktop/Decision_Transformers/VS_Implementation/src/common/base_dt.py", line 84, in forward
+    attn_output = self.attention(
+  File "/Users/jamesmaskill/miniforge3/envs/py10env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/jamesmaskill/miniforge3/envs/py10env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/jamesmaskill/miniforge3/envs/py10env/lib/python3.10/site-packages/torch/nn/modules/activation.py", line 1266, in forward
+    attn_output, attn_output_weights = F.multi_head_attention_forward(
+  File "/Users/jamesmaskill/miniforge3/envs/py10env/lib/python3.10/site-packages/torch/nn/functional.py", line 5504, in multi_head_attention_forward
+    attn_output = scaled_dot_product_attention(q, k, v, attn_mask, dropout_p, is_causal)
+KeyboardInterrupt

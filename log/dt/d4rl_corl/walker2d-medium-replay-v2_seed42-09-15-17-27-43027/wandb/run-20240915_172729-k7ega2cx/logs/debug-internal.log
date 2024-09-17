@@ -1,0 +1,22 @@
+2024-09-15 17:27:29,557 INFO    StreamThr :43055 [internal.py:wandb_internal():85] W&B internal server running at pid: 43055, started at: 2024-09-15 17:27:29.554904
+2024-09-15 17:27:29,560 DEBUG   HandlerThread:43055 [handler.py:handle_request():158] handle_request: status
+2024-09-15 17:27:29,562 INFO    WriterThread:43055 [datastore.py:open_for_write():87] open: ./log/dt/d4rl_corl/walker2d-medium-replay-v2_seed42-09-15-17-27-43027/wandb/run-20240915_172729-k7ega2cx/run-k7ega2cx.wandb
+2024-09-15 17:27:29,563 DEBUG   SenderThread:43055 [sender.py:send():379] send: header
+2024-09-15 17:27:29,584 DEBUG   SenderThread:43055 [sender.py:send():379] send: run
+2024-09-15 17:27:29,919 INFO    SenderThread:43055 [dir_watcher.py:__init__():211] watching files in: ./log/dt/d4rl_corl/walker2d-medium-replay-v2_seed42-09-15-17-27-43027/wandb/run-20240915_172729-k7ega2cx/files
+2024-09-15 17:27:29,919 INFO    SenderThread:43055 [sender.py:_start_run_threads():1188] run started: k7ega2cx with start time 1726435649.556422
+2024-09-15 17:27:29,930 DEBUG   HandlerThread:43055 [handler.py:handle_request():158] handle_request: check_version
+2024-09-15 17:27:29,931 DEBUG   SenderThread:43055 [sender.py:send_request():406] send_request: check_version
+2024-09-15 17:27:30,097 DEBUG   HandlerThread:43055 [handler.py:handle_request():158] handle_request: run_start
+2024-09-15 17:27:30,105 DEBUG   HandlerThread:43055 [system_info.py:__init__():26] System info init
+2024-09-15 17:27:30,105 DEBUG   HandlerThread:43055 [system_info.py:__init__():41] System info init done
+2024-09-15 17:27:30,105 INFO    HandlerThread:43055 [system_monitor.py:probe():214] Collecting system info
+2024-09-15 17:27:30,665 DEBUG   HandlerThread:43055 [system_info.py:probe():152] Probing system
+2024-09-15 17:27:30,671 DEBUG   HandlerThread:43055 [system_info.py:_probe_git():137] Probing git
+2024-09-15 17:27:30,689 DEBUG   HandlerThread:43055 [system_info.py:_probe_git():145] Probing git done
+2024-09-15 17:27:30,689 DEBUG   HandlerThread:43055 [system_info.py:probe():200] Probing system done
+2024-09-15 17:27:30,689 DEBUG   HandlerThread:43055 [system_monitor.py:probe():223] {'os': 'macOS-14.4-arm64-arm-64bit', 'python': '3.10.14', 'heartbeatAt': '2024-09-15T21:27:30.666007', 'startedAt': '2024-09-15T21:27:29.544847', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/Users/jamesmaskill/Documents/GitHub/Enriched_Decision_Transformers/scripts/test_drawdown.py', 'codePathLocal': 'scripts/test_drawdown.py', 'codePath': 'scripts/test_drawdown.py', 'git': {'remote': 'https://github.com/maskillj/Enriched_Decision_Transformers.git', 'commit': '348f521b69c58b1623358697aff0645cbbbe9d69'}, 'email': 'maskillj@gmail.com', 'root': '/Users/jamesmaskill/Documents/GitHub/Enriched_Decision_Transformers', 'host': 'Jamess-MacBook-Pro.local', 'username': 'jamesmaskill', 'executable': '/Users/jamesmaskill/miniforge3/envs/py10env/bin/python', 'cpu_count': 8, 'cpu_count_logical': 8, 'cpu_freq': {'current': 3504, 'min': 600, 'max': 3504}, 'cpu_freq_per_core': [{'current': 3504, 'min': 600, 'max': 3504}], 'disk': {'/': {'total': 228.27386474609375, 'used': 19.083465576171875}}, 'gpuapple': {'type': 'Apple M2', 'vendor': 'sppci_vendor_Apple'}, 'memory': {'total': 8.0}}
+2024-09-15 17:27:30,689 INFO    HandlerThread:43055 [system_monitor.py:probe():224] Finished collecting system info
+2024-09-15 17:27:30,689 INFO    HandlerThread:43055 [system_monitor.py:probe():227] Publishing system info
+2024-09-15 17:27:30,689 DEBUG   HandlerThread:43055 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-09-15 17:27:30,925 INFO    Thread-12 :43055 [dir_watcher.py:_on_file_created():271] file/dir created: ./log/dt/d4rl_corl/walker2d-medium-replay-v2_seed42-09-15-17-27-43027/wandb/run-20240915_172729-k7ega2cx/files/conda-environment.yaml

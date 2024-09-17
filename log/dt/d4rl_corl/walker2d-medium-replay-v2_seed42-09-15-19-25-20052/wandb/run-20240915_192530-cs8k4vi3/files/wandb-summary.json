@@ -1,0 +1,1 @@
+{"loss/actor_loss": 0.06924150590057081, "misc/learning_rate": 0.0008, "step": 160, "_timestamp": 1726504167.42134, "_runtime": 61436.596174001694, "_step": 31, "Eval/reward": 268.04714563400034, "Eval/max_drawdown": 0.0, "_wandb": {"runtime": 61812}}

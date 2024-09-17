@@ -1,0 +1,165 @@
+wandb_version: 1
+
+NameSpace:
+  desc: null
+  value: {}
+attention_dropout:
+  desc: null
+  value: 0.1
+batch_size:
+  desc: null
+  value: 64
+betas:
+  desc: null
+  value:
+  - 0.9
+  - 0.999
+clip_grad:
+  desc: null
+  value: 0.25
+debug:
+  desc: null
+  value: false
+embed_dim:
+  desc: null
+  value: 128
+embed_dropout:
+  desc: null
+  value: 0.1
+episode_len:
+  desc: null
+  value: 1000
+eval_episode:
+  desc: null
+  value: 10
+eval_interval:
+  desc: null
+  value: 10
+log_interval:
+  desc: null
+  value: 10
+lr:
+  desc: null
+  value: 0.0008
+max_drawdown:
+  desc: null
+  value: []
+max_epoch:
+  desc: null
+  value: 10000
+name:
+  desc: null
+  value: d4rl_corl
+normalize_obs:
+  desc: null
+  value: true
+normalize_reward:
+  desc: null
+  value: false
+num_heads:
+  desc: null
+  value: 1
+num_layers:
+  desc: null
+  value: 5
+num_workers:
+  desc: null
+  value: 4
+policy_type:
+  desc: null
+  value: deterministic
+pos_encoding:
+  desc: null
+  value: embed
+residual_dropout:
+  desc: null
+  value: 0.1
+return_scale:
+  desc: null
+  value: 0.001
+save_interval:
+  desc: null
+  value: 50
+seed:
+  desc: null
+  value: 42
+seq_len:
+  desc: null
+  value: 64
+step_per_epoch:
+  desc: null
+  value: 100
+target_returns:
+  desc: null
+  value:
+  - 300
+task:
+  desc: null
+  value: walker2d-medium-replay-v2
+total_timesteps:
+  desc: null
+  value: []
+use_abs_timestep:
+  desc: null
+  value: true
+wandb:
+  desc: null
+  value:
+    entity: null
+    project: null
+warmup_steps:
+  desc: null
+  value: 1
+weight_decay:
+  desc: null
+  value: 0.0001
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.14
+    cli_version: 0.17.5
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1726438337
+    t:
+      1:
+      - 1
+      - 55
+      2:
+      - 1
+      - 55
+      3:
+      - 7
+      - 13
+      - 16
+      - 23
+      4: 3.10.14
+      5: 0.17.5
+      8:
+      - 5
+      13: darwin-arm64
+    m:
+    - 1: step
+      6:
+      - 3
+    - 1: loss/actor_loss
+      5: 1
+      6:
+      - 1
+      - 3
+    - 1: misc/learning_rate
+      5: 1
+      6:
+      - 1
+      - 3
+    - 1: Eval/max_drawdown
+      5: 1
+      6:
+      - 1
+      - 3
+    - 1: Eval/reward
+      5: 1
+      6:
+      - 1
+      - 3

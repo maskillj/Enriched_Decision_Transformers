@@ -1,0 +1,38 @@
+/Users/jamesmaskill/miniforge3/envs/py10env/lib/python3.10/site-packages/gym/spaces/box.py:84: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+
+load datafile: 100%|█████████████████████████████████████████████████████████████████████████████████████████████| 11/11 [00:01<00:00,  6.27it/s]
+[1m[2024-09-15 17:39:25][22m	Episode 2:
+{'reward': np.float64(241.6532539819459), 'max_drawdown': np.float64(0.0)}
+[1m[2024-09-15 17:45:36][22m	Episode 4:
+{'reward': np.float64(245.8459995066196), 'max_drawdown': np.float64(0.0)}
+[1m[2024-09-15 17:51:21][22m	Episode 6:
+{'reward': np.float64(249.4133601041014), 'max_drawdown': np.float64(0.0)}
+Traceback (most recent call last):
+  File "/Users/jamesmaskill/Documents/GitHub/Enriched_Decision_Transformers/scripts/test_drawdown.py", line 71, in <module>
+    train_metrics = policy.update(batch, clip_grad=args.clip_grad)
+  File "/Users/jamesmaskill/Desktop/Decision_Transformers/VS_Implementation/src/drawdown_control/decision_transformer_policy.py", line 77, in update
+    out = self.dt(
+  File "/Users/jamesmaskill/miniforge3/envs/py10env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/jamesmaskill/miniforge3/envs/py10env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/jamesmaskill/Desktop/Decision_Transformers/VS_Implementation/src/drawdown_control/decision_transformer.py", line 61, in forward
+    out = super().forward(
+  File "/Users/jamesmaskill/Desktop/Decision_Transformers/VS_Implementation/src/common/base_dt.py", line 149, in forward
+    inputs = block(inputs, attention_mask=mask, key_padding_mask=key_padding_mask)
+  File "/Users/jamesmaskill/miniforge3/envs/py10env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/jamesmaskill/miniforge3/envs/py10env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/jamesmaskill/Desktop/Decision_Transformers/VS_Implementation/src/common/base_dt.py", line 84, in forward
+    attn_output = self.attention(
+  File "/Users/jamesmaskill/miniforge3/envs/py10env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/jamesmaskill/miniforge3/envs/py10env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/jamesmaskill/miniforge3/envs/py10env/lib/python3.10/site-packages/torch/nn/modules/activation.py", line 1266, in forward
+    attn_output, attn_output_weights = F.multi_head_attention_forward(
+  File "/Users/jamesmaskill/miniforge3/envs/py10env/lib/python3.10/site-packages/torch/nn/functional.py", line 5504, in multi_head_attention_forward
+    attn_output = scaled_dot_product_attention(q, k, v, attn_mask, dropout_p, is_causal)
+KeyboardInterrupt
